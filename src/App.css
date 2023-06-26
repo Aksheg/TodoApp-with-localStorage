@@ -1,0 +1,125 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  padding: 1rem 0;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1a1a40;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 5px;
+  max-height: 100%;
+  width: fit-content;
+}
+
+.div2 {
+  overflow: auto;
+  max-height: 75vh;
+  overflow: auto;
+}
+
+.desc {
+  overflow: auto;
+  max-height: 1.5rem;
+  width: 22rem;
+}
+
+.TodoForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-align: left;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.title-desc {
+  text-align: left;
+}
+.title-desc p {
+  margin-top: 0.3rem;
+}
+
+.Todo:hover {
+  background-color: #7246cb;
+}
+
+.TodoActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.TodoActions i {
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #fff;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+
+.done {
+  color: #c5aeff;
+}
